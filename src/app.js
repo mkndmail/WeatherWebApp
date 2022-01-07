@@ -12,7 +12,7 @@ const viewsPath = path.join(
   "templates/views"
 );
 const partialsPath = path.join(
-  "C:/MukundWorkspace/MukundLearning/NodeJsLearning/webserver-express",
+ __dirname,
   "templates/partials"
 );
 
