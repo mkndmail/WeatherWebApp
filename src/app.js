@@ -12,11 +12,7 @@ const viewsPath = path.join(
   "templates/views"
 );
 const partialsPath = path.join(
-<<<<<<< HEAD
  __dirname,
-=======
-   __dirname,
->>>>>>> 3200273dd3fbdf98091fe27d17854bcec85e65cd
   "templates/partials"
 );
 
