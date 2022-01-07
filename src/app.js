@@ -4,15 +4,15 @@ import hbs from "hbs";
 import geocode from "./utils/geocode.js";
 import forecast from "./utils/forecast.js";
 const publicpath = path.join(
-  "C:/MukundWorkspace/MukundLearning/NodeJsLearning/webserver-express",
+   __dirname,
   "public"
 );
 const viewsPath = path.join(
-  "C:/MukundWorkspace/MukundLearning/NodeJsLearning/webserver-express",
+   __dirname,
   "templates/views"
 );
 const partialsPath = path.join(
-  "C:/MukundWorkspace/MukundLearning/NodeJsLearning/webserver-express",
+   __dirname,
   "templates/partials"
 );
 
