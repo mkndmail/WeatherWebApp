@@ -12,16 +12,13 @@ const viewsPath = path.join(
   "templates/views"
 );
 const partialsPath = path.join(
-<<<<<<< HEAD
- __dirname,
-=======
    __dirname,
->>>>>>> 3200273dd3fbdf98091fe27d17854bcec85e65cd
   "templates/partials"
 );
 
 
 const app = express();
+const port = process.env.PORT||3000
 app.use(express.static(publicpath));
 app.set("view engine", "hbs");
 app.set("views", viewsPath);
@@ -95,6 +92,6 @@ app.get("*", (req, res) => {
     errorMessage: "The page you are looking is not found",
   });
 });
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Server is up and running on port 3000");
 });
