@@ -4,19 +4,20 @@ import hbs from "hbs";
 import geocode from "./utils/geocode.js";
 import forecast from "./utils/forecast.js";
 import { cwd } from 'process';
+const currentDirectory = cwd()
 const publicpath = path.join(
-  cwd,
+  currentDirectory,
   "public"
 );
 const viewsPath = path.join(
-   cwd,
+   currentDirectory,
   "templates/views"
 );
 const partialsPath = path.join(
-  cwd,
+  currentDirectory,
   "templates/partials"
 );
-console.log(cwd);
+console.log("Current Directory",currentDirectory);
 
 const app = express();
 const port = process.env.PORT||3000
