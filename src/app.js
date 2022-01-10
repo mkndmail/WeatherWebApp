@@ -16,7 +16,7 @@ const partialsPath = path.join(
   cwd,
   "templates/partials"
 );
-
+console.log(cwd);
 
 const app = express();
 const port = process.env.PORT||3000
