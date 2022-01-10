@@ -3,16 +3,17 @@ import express from "express";
 import hbs from "hbs";
 import geocode from "./utils/geocode.js";
 import forecast from "./utils/forecast.js";
+import { cwd } from 'process';
 const publicpath = path.join(
-   __dirname,
+  cwd,
   "public"
 );
 const viewsPath = path.join(
-   __dirname,
+   cwd,
   "templates/views"
 );
 const partialsPath = path.join(
-   __dirname,
+  cwd,
   "templates/partials"
 );
 
