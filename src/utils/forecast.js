@@ -14,12 +14,15 @@ const forecast = (latitude, longitude, callback) => {
       callback(response.body.error.info);
     } else {
       const { name, country, region } = location;
-      const { temperature, feelslike } = current;
+      const { temperature, feelslike,weather_icons,humidity } = current;
+      console.log("weather_icon",weather_icons[0]);
       callback(undefined, {
         place: name,
         country,
         region,
         temperature,
+        weatherIcon:weather_icons[0],
+        humidity,
         forecast:
           current.weather_descriptions[0] +
           ". It's currently " +

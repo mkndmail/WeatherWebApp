@@ -38,6 +38,9 @@ header a{
     height: 250px;
     margin:16px
 }
+.right-picture{
+    float: right;
+}
 
 .main-content{
     flex: 1;

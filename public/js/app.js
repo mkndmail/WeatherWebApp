@@ -4,6 +4,7 @@ const weatherform = document.querySelector("form");
 const search = document.querySelector("input");
 const message = document.querySelector("#message");
 const error = document.querySelector("#error");
+const humidity = document.querySelector("#humidity");
 message.textContent = "";
 error.textContent = "";
 const fetchLocation = (location) => {
@@ -17,7 +18,8 @@ const fetchLocation = (location) => {
           return console.log(data.error);
         } else {
           message.textContent = data.forecast;
-          error.textContent = data.location+", "+data.address;
+          error.textContent = data.address;
+          humidity.textContent = `Humidity is ${data.humidity}`;
           console.log(data);
         }
       });
